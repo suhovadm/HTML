@@ -1,0 +1,152 @@
+body{
+	background: #DCDCDC; / * Gainsboro. */
+	z-index: 0;
+	position: relative;
+}
+
+/* Основной зелёный слой карточки. */
+.sloy1{
+	background: #008080; /* Teal */
+	border: 1px; /* Граница без очертаний, то есть без solid и black */
+	border-radius: 6.5%; /* Скругление границ карточки. */
+	margin-top: 1.5%;
+	margin-left: 12.5%;
+	width: 1000px;
+	height: 600px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Поле для ввода номера карточки. */
+#number1{
+	font-family: calibri;
+	font-size: 28px;
+	padding-left: 15px; /* Отступ номера карточки внутри поля ввода слева. */
+	margin-top: 17.5%; /* Отступ поля ввода сверху. */
+	margin-left: 6.6%; /* Отступ поля ввода слева. */
+	width: 589px; /* Ширина поля ввода. */
+	height: 50px; /* Высота поля ввода. */
+	/* Здесь z-index и position можно не ставить, они определяются слоем 1. */
+}
+
+/* Маленькая оранжевая вставка. */
+.sloy2{
+	background: #FF4500; /* OrangeRed */
+	color: white;
+	font-family: calibri;
+	font-size: 24px; /* Размер шрифта внутри родительского контейнера. */
+	overflow: auto; /* Родительский контейнер. */
+	padding-top: 0.5%;
+	text-align: center;
+	width: 750px; /* Ширина оранжевой вставки. */
+	height: 40px; /* Высота оранжевой вставки. */
+	margin-top: 5%; /* Отступ оранжевой вставки сверху. */
+	margin-left: 10%; /* Отступ оранжевой вставки слева. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* Номер карточки. */
+.sloy3{
+	font-family: calibri;
+	color: darkgrey;
+	font-size: 22px;
+	margin-left: 17.5%;
+	margin-top: 12%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Имя владельца карточки. */
+.sloy4{
+	font-family: calibri;
+	color: darkgrey;
+	font-size: 22px;
+	margin-left: 17.5%;
+	margin-top: 22%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Поле для ввода имени владельца карточки. */
+#nameSur{
+	font-family: calibri;
+	font-size: 28px;
+	padding-left: 15px; /* Отступ имени владельца карточки внутри поля ввода слева. */
+	margin-top: 27.5%; /* Отступ поля ввода имени владельца карточки сверху. */
+	width: 589px; /*  Ширина поля ввода имени владельца карточки.*/
+	height: 50px; /* Высота поля ввода имени владельца карточки. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* Время действия карточки. */
+.sloy5{
+	font-family: calibri;
+	color: darkgrey;
+	font-size: 22px;
+	margin-left: 17.5%;
+	margin-top: 32%;
+	z-index: 1; 
+	position: absolute;
+}
+
+/* Окно с вводом даты 2 */
+#date1{
+	font-family: calibri;
+	font-size: 28px;
+	padding-left: 15px; /* Отступ первой даты слева (внутри поля). */
+	margin-top: 34%; /* Отступ первой даты сверху. */
+	width: 180px; /*  Ширина первой даты. */
+	height: 51px; /* Высота первой даты. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* Окно с вводом даты 2 */
+#date2{
+	font-family: calibri;
+	font-size: 28px;
+	padding-left: 15px; /* Отступ второй даты слева (внутри поля). */
+	margin-left: 204px; /* Отступ второй даты слева. */
+	margin-top: 34%; /* Отступ второй даты сверху. */
+	width: 180px; /*  Ширина второй даты. */
+	height: 51px; /* Высота второй даты. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* CVV / CVN*/
+.sloy6{
+	font-family: calibri;
+	color: darkgrey;
+	font-size: 22px;
+	margin-left: 47.5%;
+	margin-top: 32%;
+	z-index: 1; 
+	position: absolute;
+}
+
+/* Поле для ввода CVV / CVN, закрытое звёздочками. */
+#cvv{
+	font-family: calibri;
+	font-size: 28px;
+	padding-left: 15px; /* Отступ CVV / CVN слева (внутри поля). */
+	margin-top: 37%; /* Отступ CVV / CVN сверху. */
+	width: 181px; /*  Ширина CVV / CVN. */
+	height: 51px; /* Высота CVV / CVN. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* Картинка с планетой в правом нижнем углу карточки (.PNG) */
+.sloy7{
+	margin-left: 62%; /* Отступ картинки слева. */
+	margin-top: 22%; /* Отступ картинки сверху. */
+	opacity: 75%; /* Добавляем небольшую прозрачность картинке. */
+	z-index: 1;
+	position: absolute;
+	overflow: auto; /* определение родительского контейнера, дабы картинка не перекрывала остальные элементы. */
+	/* z-index может быть вровень с остальными. Поднимать его выше не обязательно. */
+}
+
