@@ -1,0 +1,91 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+<title> Цветная консоль </title> <!-- Заголовок, выводимый браузером в заголовке страницы. -->
+<link rel='stylesheet' href='colorconsole.css'> <!-- Файл с настройками для цветной консоли. -->
+<link rel='stylesheet' href='switches.css'> <!-- Свичи и радиобаттоны. -->
+</head>
+
+<body>
+
+<!-- Чёрные надписи. -->
+
+<dev class = 'inputs'> Inputs </dev> <!-- Надпись Inputs --> 
+<dev class = 'checkboxes'> Check boxes </dev> <!-- Надпись Check boxes -->
+<!-- <dev class = 'radiobuttons'> Radio buttons </dev> --> <!-- Надпись Radio buttons, отключена. -->
+<dev class = 'buttons'> Buttons </dev> <!-- Надпись Buttons -->
+<dev class = 'textarea'> Text area </dev> <!-- Надпись Text area -->
+
+<div> <input type = 'text' name = 'textareablock' id = 'textareablock' placeholder = 'Enter some text...'/> </div> <!-- Последний блок с текстом в самом низу. -->
+
+<!-- Чёрные надписи. -->
+
+<!-- Input type для inputs, первая надпись, 3 штуки. -->
+<div> <input type = 'text'  name = 'firstblock' id = 'firstblock' placeholder = 'Enter some text'/> </div>
+<div> <input type = 'text' name = 'secondblock' id = 'secondblock' placeholder = 'valid text &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#10004;'/> </div>
+<div> <input type = 'text' name = 'threeblock' id = 'threeblock' placeholder = 'invalid text &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#10006;'/> </div>
+<!-- Input type для inputs, первая надпись, 3 штуки. -->
+
+<!-- Зелёный переключатель. -->
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+
+<!-- Надпись справа от зелёного переключателя. -->
+<dev class = 'subscribe1'> Subscribe </dev> <!-- Subscribe 1 -->
+
+<!-- Красный переключатель. -->
+<label class="switch2">
+  <input type="checkbox">
+  <span class="slider2"></span>
+</label>
+
+<!-- Надпись справа от красного переключателя. -->
+<dev class = 'subscribe2'> Subscribe </dev> <!-- Subscribe 2 -->
+
+<!-- ***************************** БЛОК GENDER И РАДИОБАТТОНЫ ***************************** -->
+
+<!-- Надпись Gender: рядом с радиобаттонами. -->
+<dev class = 'gender'> Gender: </dev>
+
+<!-- Радиобаттоны. Male и Female -->
+
+<!-- Male -->
+<label class = "label"> 
+<input type = "radio" class = "radio" name = "name1" checked> <!-- В РАДИО ВЫДЕЛЯЕТСЯ ТОЛЬКО ОДИН ЭЛЕМЕНТ, ПОЭТОМУ ВЕЗДЕ НУЖЕН ОДИНАКОВЫЙ NAME !!! --> 
+<!-- checked после name помечает тот радиобаттон, который помечен по дефолту. -->
+<span class = "text"> Male </span>
+</label>
+
+<!-- Female -->
+<label class = "label"> 
+<input type = "radio" class = "radio" name = "name1"> <!-- В РАДИО ВЫДЕЛЯЕТСЯ ТОЛЬКО ОДИН ЭЛЕМЕНТ, ПОЭТОМУ ВЕЗДЕ НУЖЕН ОДИНАКОВЫЙ NAME !!! --> 
+<span class = "text"> Female </span>
+</label>
+
+<!-- ***************************** БЛОК GENDER И РАДИОБАТТОНЫ ***************************** -->
+
+
+
+<!-- //////////////////////////////////// РАЗНОЦВЕТНЫЕ КНОПКИ, 7 штук //////////////////////////////////// -->
+
+<div class = 'active'> Active </div> <!-- Первая зелёная кнопка Active -->
+<div class = 'hover'> Hover </div> <!-- Вторая зелёная кнопка Hover --> 
+<div class = 'danger'> Danger </div> <!-- Третья розовая кнопка Danger -->
+<div class = 'hover2'> Hover </div> <!-- Четвёртая тёмно-красная кнопка Hover -->
+<div class = 'disabled'> Disabled </div> <!-- Пятая серая кнопка Disabled -->
+<div class = 'plus'> + </div> <!-- Зелёный кружок с плюсом -->
+<div class = 'minus'> - </div> <!-- Красный кружок с минусом -->
+
+<!-- //////////////////////////////////// РАЗНОЦВЕТНЫЕ КНОПКИ, 7 штук //////////////////////////////////// -->
+
+</body>
+
+<footer>
+</footer>
+
+</html>
+

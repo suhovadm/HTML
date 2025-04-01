@@ -1,0 +1,383 @@
+/* Стилизация Checkbox и Radio Button. Как изменить checkbox css. Стилизация radio css */
+/* Канал Просто: разработка */
+/* https://www.youtube.com/watch?v=L0M9Q6tt5Ss */
+
+body{
+	background: #DCDCDC; /* Gainsboro */
+	z-index: 0;
+	absolute: fixed; 
+}
+
+.inputs{
+	cursor: default; /* Отключает курсор при наведении на надпись Inputs. */
+	font-family: calibri;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-left: 5.5%; /* Отступ надписи слева от края экрана. */
+	margin-top: 1.1%; /* Отступ надписи сверху от края экрана. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* Первый блок с текстом под надписью Inputs. */
+#firstblock{
+	font-family: arial;
+	font-size: 18px;
+	padding-left: 2%; /* Отступ текста слева внутри блока ввода. */
+	border-radius: 3%;
+	border: 1px solid #A9A9A9;
+	/* Высота/ширина блока ввода. */
+	height: 9%;
+	width: 28.5%;
+	/* Сдвиг самого блока ввода относительно границ экрана. */
+	margin-left: 5.5%;
+	margin-top: 4%;
+	position: absolute;
+}
+
+/* Меняет цвет внутри второго плэйсхолдера. */
+#secondblock::placeholder{ color: #008000; }
+
+/* Второй блок с текстом под надписью Inputs. */
+#secondblock{
+	font-family: arial;
+	font-size: 18px;
+	padding-left: 2%;
+	border-radius: 3%;
+	border: 1px solid #008000; /* Green */
+	/* Высота/ширина блока ввода. */
+	height: 9%;
+	width: 28.5%;
+	/* Сдвиг самого блока ввода относительного границ экрана. */
+	margin-left: 35.3%;
+	margin-top: 4%;
+	position: absolute;	
+}
+
+/* Меняет цвет внутри третьего плейсхолдера. */
+#threeblock::placeholder{ color: red; }
+
+/* Третий блок с текстом под надписью Inputs. */
+#threeblock{
+	font-family: arial;
+	font-size: 18px;
+	padding-left: 2%;
+	border-radius: 3%;
+	border: 1px solid #FF0000;
+	/* Высота/ширина блоков ввода. */
+	height: 9%;
+	width: 28.5%;
+	/* Сдвиг самого блока ввода относительно границ экрана. */
+	margin-left: 65%;
+	margin-top: 4%;
+	position: absolute;
+}
+
+/* Надпись Check boxes. */
+.checkboxes{
+	cursor: default; /* Отключает курсор при наведении на надпись Check boxes. */
+	font-family: calibri;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-left: 5.5%; /* Отступ надписи слева от края экрана. */
+	margin-top: 11%; /* Отступ надписи сверху от края экрана. */
+	z-index: 1;
+	position: absolute;
+}
+
+/* ----------------------------------------- БЛОК С РАДИОБАТТОНАМИ И НАДПИСЯМИ ДЛЯ НИХ.  ----------------------------------------- */
+
+/* Радиобаттоны - Male и Female. */
+.radiobuttons{
+	cursor: default; /* Отключает курсор при наведении на надпись Radio buttons. */
+	font-family: calibri;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-left: 5.5%;
+	margin-top: 18%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Надпись " GENDER: " */
+.gender{
+	cursor: default; /* Отключает курсор при наведении на надпись Gender. */
+	font-family: calibri;
+	font-size: 26px;
+	color: black;
+	left: 6%;
+	top: 45.75%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Радиобаттоны рядом с надписью GENDER:  */
+.label{}
+
+.radio{ 
+display: none;  /* изначально скрытый. */
+}
+
+.text{
+	cursor: pointer; /* Меняет курсор на руку при наведении на Male и/или Female. */
+	position: relative;
+	padding-left: 5.75%; /* Отступ всей конструкции слева. */
+	display: inline-block; 
+	top: 13.25%; /* Отступ всей конструкции сверху. */
+	font-family: calibri;
+	font-size: 16px;
+	
+	/* Застилизовываем fake, то есть окружность радиобаттонов. */
+	&::before{
+	content: ""; /* Без контена, оставляем пустым. */
+	display: block;
+	width: 20px; /* Ширина окружности радиобаттонов. */
+	height: 20px; /* Высота окружности радиобаттонов. */
+	border: 1px solid green; /* граница окружности, в нашем случае - зелёная. */
+	position: absolute; /* У родителя (before) position: absolute*/
+	border-radius: 50%; /* Даём окружность, для радиобаттонов. */
+	left: 37.5%; /* Смещение влево самой окружности радиобаттонов. */
+}
+
+/* Псевдоэлемент для fake, то есть для выделенного элемента. */
+&::after{
+	content: ""; /* Без контена, оставляем пустым. */
+	position: absolute; /* У дочернего (after) position: absolute */
+	display: block;
+	width: 18px; /* ширина маркера внутри радиобаттонов. */
+	height: 18px; /* высота маркера внутри радиобаттонов. */
+	background-color: green; /* цвет радиобаттона. */
+	/* центрирование радиобаттона внутри коробочки */
+	opacity: 0; /* скрываем элемент через opacity */
+	transition: 0.2s; /* задаём небольшую скорость анимации, чтобы всё было красиво. */
+	border-radius: 50%; /* даём окружность для выделенного элемента. */
+	top: 10%; /* Сдвиг самого маркера сверху. */
+	left: 39%; /* Сдвиг самого маркера слева. */
+}
+}
+
+.radio:checked + .text::after{
+	opacity: 1; /* видимый элемент. */
+}
+
+/* ----------------------------------------- БЛОК С РАДИОБАТТОНАМИ И НАДПИСЯМИ ДЛЯ НИХ.  ----------------------------------------- */
+
+/* Надпись Buttons. */
+.buttons{
+	cursor: default; /* Отключает курсор при наведении на надпись Buttons. */
+	font-family: calibri;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	left: 6%;
+	top: 55%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Первая слева зелёная кнопка Active. */
+.active{
+	background-color: #008000; /* Green */
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 7%;
+	font-family: calibri;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 1%;
+	width: 140px;
+	height: 45px;
+	top: 61%;
+	left: 6%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.active:hover{
+	border: 1px solid black; /* Чёрная граница кнопки при наведении. */
+	transition: 0.3s;
+}
+
+/* Вторая кнопка зелёная (тёмно-зелёная) кнопка Hover. */
+.hover{
+	background-color: #006400; /* DarkGreen*/
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 7%;
+	font-family: calibri;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 1%;
+	width: 140px;
+	height: 45px;
+	top: 61%;
+	left: 18%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.hover:hover{
+	border: 1px solid black; /* Чёрная граница кнопки при наведении.*/
+	transition: 0.3s;
+}
+
+/* Третья розовая кнопка Danger. */
+.danger{
+	background-color: #DC143C; /* Crimson */
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 7%;
+	font-family: calibri;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 1%;
+	width: 140px;
+	height: 45px;
+	top: 61%;
+	left: 30%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.danger:hover{
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+/* Четвёртая тёмно-красная кнопка Hover. */
+.hover2{
+	background-color: #8B0000; /* DarkRed */
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 7%;
+	font-family: calibri;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 1%;
+	width: 140px;
+	height: 45px;
+	top: 61%;
+	left: 42%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.hover2:hover{
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+/* Пятая серая кнопка Disabled. */
+.disabled{
+	background-color: #696969; /* DimGray */
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 7%;
+	font-family: calibri;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 1%;
+	width: 140px;
+	height: 45px;
+	top: 61%;
+	left: 54%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.disabled:hover{
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+/* Маленькая круглая зелёная кнопка с плюсом */
+.plus{
+	background-color: #008000; /* Green. Цвет взят от первой кнопки Active. */
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 100%;
+	font-family: calibri;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1%;
+	width: 60px;
+	height: 45px;
+	top: 61%;
+	left: 66%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.plus:hover{
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+/* Маленькая красная кнопка с минусом. */
+.minus{
+	background-color: #DC143C; /* Crimson. Взят от кнопки Danger. */
+	color: white;
+	cursor: pointer;
+	border: 1px solid #DCDCDC; /* Gainsboro вместо дефолтной обводки, чтобы сливалась с цветом Body. */
+	border-radius: 100%;
+	font-family: calibri;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1%;
+	width: 60px;
+	height: 45px;
+	top: 61%;
+	left: 72%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.3s;
+}
+
+.minus:hover{
+	border: 1px solid black;
+	transition: 0.3s;
+}
+
+/* Надпись Text area. */
+.textarea{
+	cursor: default; /* Отключает курсор при наведении на надпись Text area в самом низу. */
+	font-family: calibri;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	left: 6%;
+	top: 74%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Последний блок с текстом в самом низу страницы. */
+#textareablock{
+	font-family: arial;
+	font-size: 18px;
+	top: 80%;
+	left: 6%;
+	width: 54%;
+	height: 19%;
+	padding-bottom: 6%;
+	padding-left: 2%; /* Отступ внутри блока аналогичен всем остальным. */
+	z-index: 1;
+	position: absolute;
+}

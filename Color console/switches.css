@@ -1,0 +1,160 @@
+/* код переключателей взят отсюда:   https://html5css.ru/howto/howto_css_switch.php   */
+
+
+/* ------------------------------------------------------ ЗЕЛЁНЫЙ ПЕРЕКЛЮЧАТЕЛЬ ------------------------------------------------------ */
+
+/* Коробочка вокруг зелёного переключателя. */
+.switch {
+  /* Сдвиг первого переключателя слева и сверху от краев экрана. */
+  margin-left: 5.6%;
+  margin-top: 14%;
+  position: relative; /* У зелёного переключателя position: relative, у красного: absolute. */
+  z-index: 1;
+  display: inline-block;
+  /* высота/ширина коробочки */
+  width: 60px;
+  height: 34px;
+  border: 1px solid green; /* Границы коробочки вокруг переключателя + цвет коробочки. */
+  border-radius: 4%; /* Скругление углов вокруг переключателя. */
+}
+
+/* Прячет дефолтный чекбокс. */
+.switch input {display:none;}
+
+/* Код слайдера */
+.slider {
+  position: absolute;
+  cursor: pointer; /* меняет мышку на руку при наведении на слайдер. */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Цвет внутренней подложки по дефолту, при условии, что тумблер переходи ВЛЕВО. */
+  /* По дефолту здесь стоит #ccc, в нашем случае установлено white. */
+  -webkit-transition: .4s;
+  transition: .4s; /* Скорость плавного перехода между состояниями тумблера. */
+}
+
+/* Положение переключателя в положение BEFORE, то есть ДО, то есть ВЫКЛ. */
+.slider:before {
+  position: absolute;
+  content: ""; /* Надпись на тумблере. В нашем случае отсутствует. */
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #008000; /* Цвет самого переключателя. */
+  border-radius: 9%; /* Скругление углов зелёного переключателя. */
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* По дефолту, меняет цвет на светло-синий (#2196F3) при изменении переключателя ВПРАВО. */
+/* В нашем случае, менят цвет с белого на зелёный, чтобы придать эффект плавного заполнения кнопки. */ 
+/* Это происходит при изменении переключателя ВПРАВО. */
+input:checked + .slider {
+  background-color: green; 
+}
+
+/* Определяет движение самого переключателя ВПРАВО. */
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Надпись справа от первого зелёного тумблера. */
+.subscribe1{
+	cursor: default; /* отключает курсор при наведении на надпись Subscribe рядом с зелёным тумблером. */
+	font-family: calibri;
+	font-size: 26px;
+	font-color: black;
+	margin-top: 13.9%;
+	margin-left: 1%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* ------------------------------------------------------ КРАСНЫЙ ПЕРЕКЛЮЧАТЕЛЬ ------------------------------------------------------ */
+
+/* Коробочка вокруг красного переключателя. */
+.switch2 {
+  /* Сдвиг красного переключателя слева и сверху от краев экрана. */
+  margin-left: 15.6%;
+  margin-top: 14%;
+  position: absolute; /* У зелёного переключателя position: relative, у красного: absolute. */
+  z-index: 1;
+  display: inline-block;
+  /* высота/ширина коробочки */
+  width: 60px;
+  height: 34px;
+  border: 1px solid red; /* Границы коробочки вокруг переключателя + цвет коробочки. */
+  border-radius: 4%; /* Скругление углов вокруг переключателя. */
+}
+
+/* Прячет дефолтный чекбокс. */
+.switch input {display:none;}
+
+/* Код слайдера */
+.slider2{
+  position: absolute;
+  cursor: pointer; /* меняет мышку на руку при наведении на слайдер. */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Цвет внутренней подложки по дефолту, при условии, что тумблер переходи ВЛЕВО. */
+  /* По дефолту здесь стоит #ccc, в нашем случае установлено white. */
+  -webkit-transition: .4s;
+  transition: .4s; /* Скорость плавного перехода между состояниями тумблера. */
+}
+
+/* Положение переключателя в положение BEFORE, то есть ДО, то есть ВЫКЛ. */
+.slider2:before {
+  position: absolute;
+  content: ""; /* Надпись на тумблере. В нашем случае отсутствует. */
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: red; /* Цвет самого переключателя. */
+  border-radius: 9%; /* Скругление углов красного переключателя. */
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* По дефолту, меняет цвет на светло-синий (#2196F3) при изменении переключателя ВПРАВО. */
+/* В нашем случае, менят цвет с белого на красный при изменении переключателя ВПРАВО. */
+input:checked + .slider2{
+  background-color: red; /* Красный цвет внутренней подложки за тумблером. */
+}
+
+/* Определяет движение самого красного переключателя ВПРАВО. */
+input:focus + .slider2{
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider2:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Надпись справа от второго красного тумблера. */
+.subscribe2{
+	cursor: default; /* отключает курсор при наведении на надпись Subscribe рядом с красным тумблером. */
+	font-family: calibri;
+	font-size: 26px;
+	font-color: black;
+	margin-top: 13.9%;
+	margin-left: 21.4%;
+	z-index: 1;
+	position: absolute;
+}
+
+
+
