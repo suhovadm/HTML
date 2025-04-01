@@ -1,0 +1,327 @@
+body{
+	background-color: #DCDCDC; /* Gainsboro. */
+	z-index: 0;
+	position: relative;
+}
+
+/* Белая бумажка с формой, лежащая НА body. */
+.whiteform{
+	background-color: white; /* Цвет формы лежащей НА body. */
+	border: 1px solid grey;
+	margin: 1%; /* Отступ со всех сторон сразу. */
+	width: 97%;
+	height: 95%;
+	z-index: 1;
+	position: absolute;
+	box-shadow: 0px 0px 13px -1px #000000; /* Тень под белой "бумажкой" */
+}
+
+/* Registration form */
+.registrationform{
+	cursor: default; /* Курсор не меняется при наведении на надпись. */
+	font-family: calibri;
+	font-size: 26px;
+	color: black;
+	top: 10%;
+	left: 5.2%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Personal details */
+.personaldetails{
+	cursor: default; /* Курсор не меняется при наведении на надпись. */
+	font-family: calibri;
+	font-size: 26px;
+	color: black;
+	top: 10%;
+	left: 55%;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Значок Person */
+.person{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на иконку. */
+	font-size: 36px; /* В данном случае, font-size меняет размер иконки. */
+	top: 21%;
+	left: 5%;
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.75s;
+}
+
+.person:hover{
+	transition: 0.75s;
+	transform: rotate(180deg);
+}
+
+/* Значок почты. */
+.email{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на иконку. */
+	font-size: 37px;
+	top: 36%;
+	left: 5%;
+	z-index: 1;
+	position: absolute;
+	transition: 0.75s;
+}
+
+.email:hover{
+	transition: 0.75s;
+	transform: rotate(180deg);
+}
+
+/* Значок пароля. */
+.password{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на иконку. */
+	font-size: 35px;
+	top: 51%;
+	left: 5%;
+	z-index: 1;
+	position: absolute;
+	transition: 0.75s;
+}
+
+.password:hover{
+	transition: 0.75s;
+	transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------- ПОЛЯ ВВОДА ------------------------------------------------------- */
+
+/* Поле ввода Username */
+#usernameblock{
+	top: 22.1%;
+	left: 10%;
+	width: 41%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* Поле ввода Email address */
+#emailblock{
+	top: 36.4%;
+	left: 10%;
+	width: 41%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* Поле ввода Password */
+#passwordblock{
+	top: 52%;
+	left: 10%;
+	width: 20%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* Поле ввода Confirm password */
+#confirmpasswordblock{
+	top: 52%;
+	left: 34%;
+	width: 17%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* Поле ввода First name */
+#firstname{
+	top: 22.1%;
+	left: 54.6%;
+	width: 17%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* Поле ввода Last name */
+#lastname{
+	top: 22.1%;
+	left: 74.6%;
+	width: 17%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* ------------------------------------------------------- ПОЛЯ ВВОДА ------------------------------------------------------- */
+
+/* ------------------------------------------------------- ВЫБОР ПОЛА И ДАТЫ РОЖДЕНИЯ (КАЛЕНДАРИК) ------------------------------------------------------- */
+
+/* ВЫПАДАЮЩАЯ ФОРМА С ВЫБОРОМ ПОЛА MALE / FEMALE */
+#nameR{
+	top: 36.4%;
+	left: 54.6%;
+	color: black;
+	width: 17%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border: 2px solid grey;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* ВЫПАДАЮЩАЯ ФОРМА С КАЛЕНДАРИКОМ. ВЫБОР ДАТЫ РОЖДЕНИЯ. */
+#userbirthday{
+	top: 36.4%;
+	left: 74.6%;
+	color: black;
+	width: 17%;
+	padding-left: 1%;
+	padding-bottom: 0.5%;
+	font-family: calibri;
+	font-size: 24px;
+	z-index: 1;
+	position: absolute;
+	border: 2px solid grey;
+	border-top: 0; /* Убирает кусок рамки сверху. */
+	border-left: 0; /* Убирает кусок рамки слева. */
+	border-right: 0; /* Убирает кусок рамки справа. */
+	outline: none; /* Убирает рамку при наведении и вводе символов. */
+}
+
+/* ------------------------------------------------------- ВЫБОР ПОЛА И ДАТЫ РОЖДЕНИЯ (КАЛЕНДАРИК) ------------------------------------------------------- */
+
+.submit{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на кнопку Submit. */
+	background-color: #008B8B; /* DarkCyan */
+	color: white;
+	font-family: calibri;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 0.5%;
+	padding-bottom: 1%;
+	top: 84%;
+	left: 76.25%;
+	width: 15%;
+	height: 4%;
+	border: 1px solid #008B8B;
+	border-radius: 2%;
+	z-index: 1;
+	position: absolute;
+	box-shadow: 0px 1px 14px -2px #000000;
+	transition-duration: 0.6s;
+}
+
+.submit:hover{
+	border: 1px solid black;
+	border-radius: 2%;
+	transition: 0.6s;
+	transform:scale(105%);
+}
+
+/* ------------------------------------------------------- ВЫБОР ПОЛА И ДАТЫ РОЖДЕНИЯ (КАЛЕНДАРИК) ------------------------------------------------------- */
+
+/* ------------------------------------------------------- ЧЕКБОКСЫ ------------------------------------------------------- */
+
+/* Первый чекбокс. Это сам чекбокс. */
+.checkbox1{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на надпись справа от чекбокса. */
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	left: 6%;
+	top: 70%;
+}
+
+/* Первый текст справа от чекбокса. */
+.text1{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на надпись справа от чекбокса. */
+	font-family: calibri;
+	font-size: 20px;
+	color: black;
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	left: 10%;
+	top: 69.5%;
+	transition-duration: 1s;
+}
+
+.text1:active{
+	color: RoyalBlue;
+	transition: 0s;
+}
+
+/* Второй чекбокс. Это сам чекбокс. */
+.checkbox2{
+	cursor: pointer;
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	left: 6%;
+	top: 77.5%;
+}
+
+/* Второй текст справа от чекбокса. */
+.text2{
+	cursor: pointer; /* Меняет курсор мыши на руку при наведении на надпись справа от чекбокса. */
+	font-family: calibri;
+	font-size: 20px;
+	color: black;
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	left: 10%;
+	top: 76.8%;
+	transition-duration: 1s;
+}
+
+.text2:active{
+	color: RoyalBlue;
+	transition: 0s;
+}

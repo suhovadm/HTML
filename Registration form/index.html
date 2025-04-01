@@ -1,0 +1,69 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+<title> Форма регистрации </title> <!-- Заголовок, выводимый браузером в заголовке страницы. -->
+<link rel='stylesheet' href='registrationform.css'> <!-- Файл с настройками для формы регистрации. -->
+</head>
+
+<body>
+
+<!-- БЕЛАЯ ФОРМА -->
+<dev class = 'whiteform'> </dev> <!-- Основная белая форма для регистрации над основным серым слоем. -->
+
+<!-- ЧЁРНЫЕ НАДПИСИ -->
+<dev class = 'registrationform'> Registration form </dev> <!-- Надпись Registration form -->
+<dev class = 'personaldetails'> Personal details </dev> <!-- Надпись Personal details -->
+
+<!-- ЗНАЧКИ РЯДОМ С ПОЛЯМИ ВВОДА -->
+<dev class = 'person'> &#129497; </dev> <!-- Значок юзера -->
+<dev class = 'email'> &#128231; </dev> <!-- Значок почты -->
+<dev class = 'password'> &#128273; </dev> <!-- Значок пароля -->
+
+<!-- ПОЛЯ ВВОДА -->
+<div> <input type = 'text' name 'usernameblock' id = 'usernameblock' placeholder = 'Username'/> </div> 
+<div> <input type = 'text' name 'emailblock' id = 'emailblock' placeholder = 'Email address'/> </div>
+<div> <input type = 'text' name 'passwordblock' id = 'passwordblock' placeholder = 'Password'/> </div>
+<div> <input type = 'text' name 'confirmpasswordblock' id = 'confirmpasswordblock' placeholder ='Confirm password'/> </div>
+<div> <input type = 'text' name 'firstname' id = 'firstname' placeholder = 'First name'/> </div>
+<div> <input type = 'text' name 'lastname' id = 'lastname' placeholder = 'Last name'/> </div>
+
+<!-- ВЫПАДАЮЩАЯ ФОРМА Male / Female -->
+<div> 
+<select id = 'nameR' name = 'nameR'>
+<option> Male </option>
+<option> Female </option>
+</select> 
+</div>
+
+<!-- КАЛЕНДАРИК. ВЫБОР ДАТЫ РОЖДЕНИЯ -->
+<div> 
+<input type = 'date' name = 'birthday' id = 'userbirthday'>
+</div>
+
+<!-- КНОПКА SUBMiT (ОТПРАВИТЬ) -->
+<dev class = 'submit'> SUBMiT </dev> <!-- Кнопка SUBMiT (ОТПРАВИТЬ) в нижнем правом углу формы. -->
+
+<!-- ЧЕКБОКСЫ -->
+
+<!-- ПЕРВЫЙ ЧЕКБОКС -->
+<label class = "label"> 
+<input type = "checkbox" class = "checkbox1" > 
+<span class = "text1"> I want to receive mews and special offers </span>
+</label>
+
+<!-- ВТОРОЙ ЧЕКБОКС -->
+<label class = "label">
+<input type = "checkbox" class = "checkbox2" >
+<span class = "text2"> I agree with the Terms and Conditions </span>
+</label>
+
+</body>
+
+
+
+<footer>
+</footer>
+
+</html>
