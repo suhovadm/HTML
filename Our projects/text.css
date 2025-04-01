@@ -1,0 +1,193 @@
+/* Серая надпись Cobb County, Georgia, United States. */
+.cobbtext{
+	font-family: calibri;
+	font-size: 20px;
+	color: #696969; /* DimGray. */
+	padding-top: 15px;
+	padding-left: 85px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Серая надпись Phoenix, Arizona, United States. */
+.phoenixtext{
+	font-family: calibri;
+	font-size: 20px;
+	color: #696969; /* DimGray. */
+	padding-top: 15px;
+	padding-left: 505px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Серая надпись Dubai, UAE. */
+.dubaitext{
+	font-family: calibri;
+	font-size: 20px;
+	color: #696969; /* DimGray. */
+	padding-top: 15px;
+	padding-left: 925px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Project 1 */
+.project1{
+	font-family: arial;
+	font-size: 28px;
+	color: black;
+	padding-top: 60px;
+	padding-left: 85px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Project 2 */
+.project2{
+	font-family: arial;
+	font-size: 28px;
+	color: black;
+	padding-top: 60px;
+	padding-left: 505px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Project 3 */
+.project3{
+	font-family: arial;
+	font-size: 28px;
+	color: black;
+	padding-top: 60px;
+	padding-left: 925px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* Статичное описание Cobb County, Georgia, United States. */
+.cobbopisanie1{
+	font-family: calibri;
+	font-size: 18px;
+	color: black; /* Цвет шрифта описания проекта по дефолту. */
+	padding-top: 90px;
+	padding-bottom: 15px;
+	margin-left: 85px;
+	z-index: 1;
+	position: absolute;
+	text-align: left; /* Выравнивание текста в маленьком белом окошке по дефолту - строго слева. */
+	transition-duration: 1s; /* Скорость свёртывания чёрного окна Cobb County. */
+}
+
+/* link1 - это ссылка на Cobb County. */
+.link1{
+	text-decoration: none; /* Убирает фиолетовое свечение вокруг ссылки. */
+	color: black; /* Добавляет чёрный цвет ссылке в основном окне. */
+}
+
+/* Чёрное окно, всплывающее при наведении на текст Cobb County. */
+.cobbopisanie1:hover{
+	transition: 1s; /* Скорость развёртывания чёрного окна Cobb County. */
+	opacity: 0.8; /* Прозрачность чёрного окна Cobb County. */
+	padding-top: 1%; /* Подгон чёрного окна сверху: 1%. */
+	padding-bottom: 1%; /* Подгон чёрного окна снизу: 1%. */
+	background: black; /* Затемнение (чёрный фон). */
+	z-index: 2;
+	position: absolute;
+	top: 21%; /* Отступ чёрного окна Cobb County сверху при наведении. */
+	width: 26.5%; /* Ширина чёрного окна Cobb County при наведении. */
+	height: 155%; /* Высота чёрного окна Cobb County при наведении. */
+	color: white; /* Меняет цвет текста Cobb County с чёрного на белый при наведении и развертывании. */
+	font-size: 18px; /* Фиксирует размер шрифта при наведении и перекидывании оного на чёрное окно. */
+	text-align: left; /* Выравнивание текста в чёрном окне Cobb County - строго слева. */
+	cursor: pointer; /* Меняет курсор на руку при наведении на текст Cobb County. */
+	.link1{
+		color: white; /* Ещё разок принудительно, чтобы работало в чёрном всплывающем окне. */
+	}
+}
+
+/* Статичное описание Phoenix, Arizona, United States. */
+.phoenixopisanie1{
+	font-family: calibri;
+	font-size: 18px;
+	color: black;
+	padding-top: 90px; /* Отступ основного статичного текста сверху. */
+	margin-left: 505px;
+	z-index: 1;
+	position: absolute;
+	text-align: left; /* Весь текст по левому краю. */
+	transition-duration: 1s;
+}
+
+/* link2 - это ссылка на Phoenix, Arizona. */
+.link2{
+	text-decoration: none; /* Убирает фиолетовое свечение вокруг ссылки. */
+	color: black; /* Добавляет чёрный цвет ссылке в основном окне. */
+}
+
+/* Чёрное окно, всплывающее при наведении на Phoenix, Arizona. */
+.phoenixopisanie1:hover{
+	transition: 1s;
+	opacity: 0.8;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: black; /* Затемнение (чёрный фон). */
+	z-index: 2;
+	position: absolute;
+	top: 21%; /* Отступ чёрного окна Phoenix, Arizona сверху при наведении. */
+	width: 26.6%;
+	height: 155%;
+	color: white;
+	font-size: 18px; /* Фиксирует размер шрифта при наведении и перекидывании оного на чёрное окно. */
+	text-align: left;
+	cursor: pointer;
+	.link2{
+		color: white; /* Ещё разок принудительно, чтобы работало в чёрном всплывающем окне. */
+	}
+}
+
+/* Статичное описание Dubai, UAE. */
+.dubaiopisanie1{
+	font-family: calibri;
+	font-size: 18px;
+	color: black;
+	padding-top: 90px; /* Отступ основного статичного текста сверху. Изначально было 105px. */
+	margin-left: 925px; /* margin-left: 925 */
+	margin-right: 25px;
+	z-index: 1;
+	position: absolute;
+	text-align: left; /* Весь текст по левому краю. */
+	transition-duration: 1s;
+}
+
+/* link3 - это ссылка на Дубай. */
+.link3{
+	text-decoration: none; /* Убирает фиолетовое свечение вокруг ссылки. */
+	color: black; /* Добавляет чёрный цвет ссылке в основном окне. */
+}
+
+/* Чёрное окно, всплывающее при наведении на Dubai, UAE. */
+.dubaiopisanie1:hover{
+	transition: 1s;
+	opacity: 0.8; /* Прозрачность чёрного окна Dubai, UAE. */
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: black; /* Затемнение (чёрный фон). */
+	z-index: 2;
+	position: absolute;
+	top: 21%;  /* Отступ чёрного окна Dubai, UAE сверху при наведении. */
+	width: 26.8%;
+	height: 155%;
+	color: white;
+	font-size: 18px; /* Фиксирует размер шрифта при наведении и перекидывании оного на чёрное окно. */
+	text-align: left;
+	cursor: pointer;
+	.link3{
+		color: white; /* Ещё разок принудительно, чтобы работало в чёрном всплывающем окне. */
+	}
+}
+
+
+
+
+
+
