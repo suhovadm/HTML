@@ -1,0 +1,428 @@
+.td1, .td2, .td3, .td4, .td5{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* ASPECT = рыжий. */
+.td1{
+	background-color: #FF8C00;
+	font-weight: 700;
+}
+
+/* SiMPLE = фиолетовый, StateBlue */
+.td2{
+	background-color: #6A5ACD;
+	font-weight: 700;
+}
+
+/* PROGRESSiVE = розовый, LightCoral */
+.td3{
+	background-color: #F08080;
+	font-weight: 700;
+}
+
+/* PERFECT = зелёный, SeaGreen */
+.td4{
+	background-color: #2E8B57;
+	font-weight: 700;
+}
+
+/* PROGRESSiVE PERFECT = светло-фиолетовый, Orchid */
+.td5{
+	background-color: #DA70D6;
+	font-weight: 700;
+}
+
+/* MEANiNG */
+.td6{
+	height: 75px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: #FF8C00;
+	font-weight: 700;
+}
+
+/* a common aspect, a process, priority, priority + process */
+.td7, .td8, .td9, .td10{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* a common aspect */
+.td7{
+	background-color: #6A5ACD;
+}
+
+/* a process */
+.td8{
+	background-color: #F08080;
+}
+
+/* priority */
+.td9{
+	background-color: #2E8B57;
+}
+
+/* priority + process */
+.td10{
+	background-color: #DA70D6;
+}
+
+/* When?, At what time?, By what time?, Since what time<br>How long? */
+.td11, .td12, .td13, .td14{
+	border: 1px solid black;
+	text-align: center;
+	font-weight: 700;
+}
+
+/* When? */
+.td11{
+	background-color: #6A5ACD;
+}
+
+/* At what time? */
+.td12{
+	background-color: #F08080;
+}
+
+/* By what time? */
+.td13{
+	background-color: #2E8B57;
+}
+
+/* Since what time<br>How long? */
+.td14{
+	background-color: #DA70D6;
+}
+
+/* Period of time */
+.td15{
+	border: 1px solid black;
+	text-align: center;
+	font-weight: 700;
+	background-color: #FF8C00;
+}
+
+/* usually, often, always, seldom, every day (week, month, year) */
+.td16{
+	border: 1px solid black;
+	text-align: center;
+	background-color: #6A5ACD;
+	text-align: left;
+}
+
+/* now, at the moment, ever, never, just, already, not... yet, by 3 p.m., since 3 p.m. , for a long time, for a month */
+.td17, .td18, .td19{
+	border: 1px solid black;
+	text-align: left;
+}
+
+/* now, at the moment, */
+.td17{
+	background-color: #F08080;
+}
+
+/* ever, never, just, already, not... yet, by 3 p.m. */
+.td18{
+	background-color: #2E8B57;
+}
+
+/* since 3 p.m. , for a long time, for a month */
+.td19{
+	background-color: #DA70D6;
+}
+
+.td20, .td21, .td22, .td23, .td24, .td25, .td26, .td27, .td28, .td29, .td30, .td31, .td32{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* Present */
+.td20{
+	background-color: #FF8C00;
+}
+
+/* V + V/S */
+.td21{
+	background-color: #6A5ACD;
+}
+
+/* am/is/are + Ving */
+.td22{
+	background-color: #F08080;
+}
+
+/* have/has + Ved/V3 */
+.td23{
+	background-color: #2E8B57;
+}
+
+/* have/has + been + Ving */
+.td24{
+	background-color: #DA70D6;
+}
+
+/* ? do/does + V */
+.td25{
+	background-color: #6A5ACD;
+}
+
+/* inversion */
+.td26{
+	background-color: #F08080;
+}
+
+/* inversion */
+.td27{
+	background-color: #2E8B57;
+}
+
+/* inversion */
+.td28{
+	background-color: #DA70D6;
+}
+
+/* - do/does + not + V */
+.td29{
+	background-color: #6A5ACD;
+}
+
+/* am/is/are + not + Ving */
+.td30{
+	background-color: #F08080;
+}
+
+/* have/has + not + Ved/V3 */
+.td31{
+	background-color: #2E8B57;
+}
+
+/* have/has + not + been + Ving */
+.td32{
+	background-color: #F08080;
+}
+
+/* Period of time */
+.td33{
+	font-weight: 700;
+	text-align: center;
+	background-color: #FF8C00;
+}
+
+/* yesterday, last week (month, year), long ago, yesterday at 3 p.m. , yesterday from 6 till 7, when you came */
+/* yesterday by 3 p.m. , before some time in the past */
+/* yesterday since 3 p.m. , for some time in the past */
+.td34, .td35, .td36, .td37{
+	border: 1px solid black;
+	text-align: left;
+}	
+
+/* yesterday, last week (month, year), long ago */
+.td34{
+	background-color: #6A5ACD;
+}
+
+/* yesterday at 3 p.m. , yesterday from 6 till 7, when you came */
+.td35{
+	background-color: #F08080;
+}
+
+/* yesterday by 3 p.m. , before some time in the past */
+.td36{
+	background-color: #F08080;
+}
+
+/* yesterday since 3 p.m. , for some time in the past */
+.td37{
+	background-color: #DA70D6;
+}
+
+/* PAST, <b>V</b>ed/<b>V</b>2, was/were + <b>V</b>ing, had + <b>V</b>ed/<b>V</b>3, had + been + <b>V</b>ing*/
+.td38, .td39, .td40, .td41, .td42{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* PAST */
+.td38{
+	background-color: #FF8C00;
+}
+
+/* + <b>V</b>ed/<b>V</b>2 */
+.td39{
+	background-color: #6A5ACD;
+}
+
+/* was/were + <b>V</b>ing */
+.td40{
+	background-color: #F08080;
+}
+
+/* had + <b>V</b>ed/<b>V</b>3 */
+.td41{
+	background-color: #2E8B57;
+}
+
+/* had + been + <b>V</b>ing */
+.td42{
+	background-color: #DA70D6;
+}
+
+/* did + <b>V</b> и 3 inversion */
+.td43, .td44, .td45, .td46{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* did + V */
+.td43{
+	background-color: #6A5ACD;
+}
+
+/* inversion */
+.td44{
+	background-color: #F08080;
+}
+
+/* inversion */
+.td45{
+	background-color: #2E8B57;
+}
+
+/* inversion */
+.td46{
+	background-color: #DA70D6;
+}
+
+/* - did + not + <b>V</b>, was/were + not + <b>V</b>ing, had + not + <b>V</b>ed/<b>V</b>3, had + not + been <b>V</b>ing */
+.td43, .td44, .td45, .td46{
+	border: 1px solid black;
+	text-align: center
+}
+
+/* Period of time */
+.td47{
+	font-weight: 700;
+	text-align: center;
+	background-color: #FF8C00;
+}
+
+/* tomorrow, next week (month, year), tomorrow at 3 p.m. , tomorrow from 6 till 7, when you come</i> */
+/* <i>tomorrow by 3 p.m. , before some time in the future</i> */
+/* <i>tomorrow since 3 p.m. , for some time in the future</i> */
+.td48, .td49, .td50, td51{
+	border: 1px solid black;
+	text-align: left;
+}
+
+/* <i>tomorrow, next week (month, year)</i> */
+.td48{
+	background-color: #6A5ACD;
+}
+
+/* <i>tomorrow at 3 p.m. , tomorrow from 6 till 7, when you come</i> */
+.td49{
+	background-color: #F08080;
+}
+
+/* <i>tomorrow by 3 p.m. , before some time in the future</i> */
+.td50{
+	background-color: #2E8B57;
+}
+
+/* <i>tomorrow since 3 p.m. , for some time in the future</i> */
+.td51{
+	background-color: #DA70D6;
+}
+
+/* Future will + <b>V</b> will + be + <b>V</b>ing will + have + <b>V</b>ed/<b>V</b>3 will + have + been + <b>V</b>ing */
+.td52, .td53, .td54, .td55, .td56{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* Future */
+.td52{
+	background-color: #FF8C00;
+}
+
+/* will + be + <b>V</b>ing */
+.td53{
+	background-color: #6A5ACD;
+}
+
+/* will + be + <b>V</b>ing */
+.td54{
+	background-color: #F08080;
+}
+
+/* will + have + <b>V</b>ed/<b>V</b>3 */
+.td55{
+	background-color: #2E8B57;
+}
+
+/* will + have + been + <b>V</b>ing */
+.td56{
+	background-color: #DA70D6;
+}
+
+/* Все четыре штуки - inversion */
+.td57, .td58, .td59, .td60{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* inversion */
+.td57{
+	background-color: #6A5ACD;
+}
+
+/* inversion */
+.td58{
+	background-color: #F08080;
+}
+
+/* inversion */
+.td59{
+	background-color: #2E8B57;
+}
+
+/* inversion */
+.td60{
+	background-color: #DA70D6;
+}
+
+/* - won't + <b>V</b> */
+/* won't + be + <b>V</b>ing */
+/* won't + have + <b>V</b>ed/<b>V</b>3 */
+/* won't + have + been + <b>V</b>ing */
+.td61, .td62, .td63, .td64{
+	border: 1px solid black;
+	text-align: center;
+}
+
+/* - won't + <b>V</b> */
+.td61{
+	background-color: #6A5ACD;
+}
+
+/* won't + be + <b>V</b>ing */
+.td62{
+	background-color: #F08080;
+}
+
+/* won't + have + <b>V</b>ed/<b>V</b>3 */
+.td63{
+	background-color: #2E8B57;
+}
+
+/* won't + have + been + <b>V</b>ing */
+.td64{
+	background-color: #DA70D6;
+}
+
+
+
+
+
+

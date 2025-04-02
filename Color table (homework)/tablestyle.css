@@ -1,0 +1,6 @@
+table{
+	font-family: calibri;
+	font-size: 26px;
+	border: 1px solid black; /* Слипание границ у всех блоков. */
+	border-collapse: collapse;
+}
