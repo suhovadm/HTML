@@ -1,0 +1,203 @@
+<!DOCTYPE html> <!-- Доктайп. Необходим для корректного отображения содержимого страницы в разных браузерах. -->
+
+<html>
+
+<head>
+<title> HTML Tutorial </title> <!-- Заголовок, выводимый в строке браузера. -->
+<link rel='stylesheet' href='style.css'> <!-- Подключение стилей из файла style.css -->
+</head>
+
+
+
+<header> <!-- Открывающая шапка сайта, заголовок странички. -->
+<br> <!-- Отступ сверху, над заголовком. Пустая строка. -->
+<center>HTML Tutorial</center> <!-- Тэги center выравнивают заголовок по-центру. -->
+</header> 
+
+
+
+<body>
+
+<!-- Стайл для всего BODY. -->
+<style>
+body{
+background-color: #DCDCDC; <!-- Цвет фона всей странички. В данном случае: Gainsboro. -->
+}
+</style>
+
+<!-- Стайл для header-a, для заголовка странички. -->
+<!-- Стайл вобязон ПОД header, иначе не заработает. -->
+<style> 
+header{
+font-family: calibri;
+font-size: 52px;
+font-weight: 600; <!-- Полужирный. -->
+}
+</style>
+<!-- Стайл для header-a, для заголовка странички. -->
+
+<br> <!-- Отступ снизу, между "HTML Tutorial" и сплошной чертой. -->
+<hr> <!-- Сплошная черта под заголовком страницы. -->
+
+<header2>
+
+<br> <!-- Пропуск строки НАД вторым заголовком. -->
+<center>What is HTML?</center>
+<br> <!-- Пропуск строки ПОД вторым заголовком. -->
+</header2>
+
+<!-- Стайл для второго header-а. То есть, для второго заголовка странички. -->
+<!-- Стайл вобязон ПОД header2, иначе не заработает. -->
+<style>
+header2{
+font-family: calibri;
+font-size: 30px;
+font-weight: 600; <!-- Полужирный. -->
+}
+</style>
+
+<!-- Первая пачка текста. -->
+<!-- Тэги &lt; и &gt; ставятся вместо < и >, чтобы тэги отображались на сайте в виде текста. -->
+<div>
+<b>Hypertext markup language <u>(HTML)</u></b> is the standart markup language for creating web pages and web applications.
+<br>
+<br>
+Web browsers recieve <u>HTML</u> documents from a web server or from local storage and render the documents
+into multimedia web pages. <u>HTML</u> describes the structure of a web page semantically and originally
+included cues for the appearance of the document.
+<br>
+<br>
+<u>HTML</u> elements are the building blocks of <u>HTML</u> pages. With <u>HTML</u> constructs, images and other objects
+such as interactive forms may be embedded into the rendered page. <u>HTML</u> provides a means to create
+structured documents by denoting structural semantics for text such as headings, paragraphs, lists,
+links, quotes and other items. <u>HTML</u> elements are delineated by <i>tags</i>, written using angle brackets.
+Tags such as <span class = "colortext3">&lt;img /&gt;</span> and <span class = "colortext3">&lt;input /&gt;</span> directly introduce content into the page. Other tags such as <span class = "colortext3">&lt;p&gt</span>;
+surround and provide information about document text and may include other tags as sub-elements.
+Browsers do not display the <u>HTML</u> tags, but use them to interpret the content of the page.
+</div>
+<hr> <!-- Сплошная черта под первой пачкой текста. -->
+<br> <!-- Отступ между второй сплошной чертой и надписью "Markup" -->
+
+<!-- Стайл для первой и второй пачки текста, то есть один на два общих div-a. -->
+<style>
+div{
+font-family: calibri; 
+font-size: 18px; 
+overflow: auto;
+width: 800px;
+padding-left: 280px;
+padding-right: 280px;
+<!-- padding left и right - отступы справа и слева. Таким образом выравниваем всю пачку текста по-центру. -->
+<!-- overflow: auto - родительский контейнер, width: 800px - ширина родительского контейнера для первой пачки текста. -->
+}
+</style>
+
+
+<header3>
+<center>Markup</center>
+<br> <!-- Отступ между "Markup" (снизу) и второй пачкой текста. -->
+</header3>
+
+<!-- Стайл для третьего header-а. То есть, для третьего заголовка странички. -->
+<style>
+header3{
+font-family: calibri;
+font-size: 30px;
+font-weight: 600; <!-- Полужирный. -->
+}
+</style>
+
+<!-- Вторая пачка текста. -->
+<div>
+<u>HTML</u> markup consists of several key components, including those called <i>tags</i> (and their <i>attributes</i>),
+character-based <i>data types, character references</i> and <i>entity references</i>. <u>HTML</u> tags most commonly
+come in pairs like <span class = "colortext3">&lt;h1&gt;</span> and <span class = "colortext3">&lt;/h1&gt;</span>, although some represent <i>empty elements</i> and so are unpaired,
+for example <span class = "colortext3">&lt;img&gt;</span>. The first tag in such a pair is the <i>start tag</i>, and the second is the <i>end tag</i>
+(they are also called <i>opening tags</i> and <i>closing tags</i>).
+<br>
+Another important component is the <u>HTML</u> <i>document type declaration</i>, which triggers standards mode
+rendering.
+<br>
+The following is an example of the classic "Hello, World!" program:
+</div>
+
+<!-- Описывает красные тэги, выделенные как текст, в первой и второй пачках текста. -->
+<style>
+.colortext3{
+color: red;
+}
+</style>
+
+
+
+<!-- Основные тэги описаны как классы и загнаны в style.css. Там для них описаны свойства: отступы и цвет текста. -->
+<!-- Надписи между тэгами описаны свойством <span class = "colortext"> </span> -->
+<div class = "DOCTYPE"><br>&lt;!DOCTYPE html&gt;</div>
+<div class = "html">&lt;html&gt;</div>
+<div class = "head">&lt;head&gt;</div>
+<div class = "title">&lt;title&gt;<span class = "colortext1">This is a title</span>&lt;/title&gt;</div> 
+
+
+
+<!-- Стайл для надписи "This is a title" внутри тэгов <title></title>, выделенных красным. -->
+<!-- Чёрный цвет задаётся параметром <span = class "colortext"></span> -->
+<!-- Затем, .colortext просто закидывается в ближайший style и для него применяется цвет. -->
+<style>
+.colortext1{
+color: black;
+}
+</style>
+
+
+
+<div class = "head">&lt;/head&gt;</div>
+
+
+
+<div class = "body">&lt;body&gt;</div>
+<div class = "p">&lt;p&gt;<span class = "colortext">Hello World!</span>&lt;/p&gt;</div>
+
+
+<!-- Стайл для "Hello World!" Описывает ему чёрный цвет, так как "Hello World!" идёт между тэгами <p></p> -->
+<style>
+.colortext{
+color: black;
+}
+</style>
+
+
+
+<div class = "body">&lt;/body&gt;</div>
+<div class = "html">&lt;/html&gt;</div>
+
+
+
+
+
+<br> <!-- Отступ в одну строку под последним тэгом html. -->
+<hr> <!-- Сплошная линия под последним тэгом html. -->
+
+</body>
+
+
+<!-- В Футере пописана строчка Tags (чёрным цветом) и все остальные, идущие рядом. -->
+<!-- В данном случае, сделано следующим образом: слово "Tags" объявлено как класс "tags" --> 
+<!-- и загнано в style.css, там для него заданы параметры шрифта, жирности и цвет. -->
+<!-- Все остальные тэги оставлены в HTML. Они описаны тэгом <span class = "colortext2"></span> -->
+<!-- Для них применён просто обычный стайл чуть ниже, там же, в Футере. -->
+<footer> 
+<div class = "tags">Tags: <span class = "colortext2">CodingScripting head HTML Introduction to HTML Landing Links Semantics Structure Text</span></div>
+
+<style>
+.colortext2{
+color: #1E90FF; <!-- Цвет текста: DodgerBlue -->
+}
+</style>
+</footer>
+
+
+
+
+
+</html>
+

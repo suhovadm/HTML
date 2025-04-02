@@ -1,0 +1,41 @@
+.DOCTYPE{
+	padding-left: 315px;
+	color: red;
+}
+
+.html{
+	padding-left: 315px;
+	color: red;
+}
+
+.head{
+	padding-left: 355px;
+	color: red;
+}
+
+.body{
+	padding-left: 355px;
+	color: red;
+}
+
+.title{
+	padding-left: 390px;
+	color: red;
+}
+
+.p{
+	padding-left: 390px;
+	color: red;
+}
+
+.tags{
+	font-family: calibri;
+	font-size: 18px;
+	font-weight: 600;
+	font-color: black;
+}
+
+/* Запрещает прокрутку по горизонтали. */
+body{
+	overflow-x: hidden;
+}
