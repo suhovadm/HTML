@@ -1,0 +1,52 @@
+body{
+	background: #DCDCDC; /* Gainsboro */
+}
+
+header{
+	font-family: calibri;
+	font-size: 28px;
+	font-weight: 700; /* Жирный шрифт */
+	color: black;
+	overflow: auto; /* Определение родительского контейнера для заголовка TAG */
+	width: 80px; /* Ширина контейнера заголовка TAG */
+	height: 40px; /* Высота контейнера заголовка TAG */
+	padding-left: 50px; /* Отступ слева для контейнера TAG */
+	padding-top: 40px; /* Отступ сверху для контейнера TAG */
+}
+
+.taeg{
+	font-family: calibri;
+	font-size: 18px;
+	color: black;
+	overflow: auto;
+	width: 50px;
+	height: 40px;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+.noun{
+	font-family: calibri;
+	font-size: 20px;
+	color: black;
+	overflow: auto;
+	width: 50px;
+	height: 40px;
+	padding-left: 50px;
+}
+
+.verb{
+	font-family: calibri;
+	font-size: 20px;
+	color: black;
+	overflow: auto;
+	width: 50px;
+	height: 40px;
+	padding-left: 50px;
+}
+
+ol{
+	font-family: calibri;
+	font-size: 20px;
+	padding-left: 125px;
+}
