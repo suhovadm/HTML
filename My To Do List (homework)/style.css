@@ -1,0 +1,329 @@
+body{
+	background: white; /* Цвет основного фона - белый. */
+}
+
+/* Первый СЕРЫЙ слой, лежащий под списком. Основная подложка. */
+.sloy1{
+	background: #DCDCDC; /* Цвет основного СЕРОГО слоя (подложки). В данном случае: #DCDCDC - Gainsboro */
+	overflow: auto;
+	width: 650px;
+	height: 660px; /* Высота СЕРОГО слоя (подложки) */
+	z-index: 0;
+	position: relative; /* RELATIVE - это то, что ПОД. */
+	margin: 0 auto; /* Автоподгон по-центру экрана. С ABSOLUTE не работает. */
+}
+
+/* Заголовок "My to do list" */
+header{
+	font-family: calibri;
+	font-size: 28px;
+	font-weight: 700; /* Полужирный шрифт для заголовка My to do list. */
+	color: black;
+	padding-top: 5px; /* Отступ родительского контейнера с заголовком My to do list сверху. */
+	padding-left: 380px; /* Отступ родительского контейнера с заголовком My to do list слева. */
+	overflow: auto; /* Определение родительского контейнера для заголовка My to do list. */
+	width: 175px; /* Ширина родительского контейнера для заголовка My to do list. */
+	height: 50px; /* Высота родительского контейнера для заголовка My to do list. */
+	z-index: 1;
+	position: absolute; /* ABSOLUTE - это то, что НАД. */
+}
+
+.sloy2{
+	background: #4682B4; /* Цвет первой полоски под Hit the gym. Цвет называется SteelBlue */
+	overflow: auto;
+	margin-top: 44px; /* Отступ первого голубого родительского контейнера сверху. */
+	margin-left: 380px; 
+	width: 575px; /* Ширина первого голубого родительского контейнера. */
+	height: 50px; /* Высота первого голубого родительского контейнера. */
+	z-index: 2;
+	position: absolute;
+}
+
+/* Hit the gym */
+.sloy3{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 45px;
+	margin-left: 410px;
+	width: 360px;
+	height: 50px;
+	z-index: 3;
+	position: absolute;
+}
+
+.sloy4{
+	background: #C0C0C0; /* Цвет подложки, под зачёркнутой надписью Pay the bills. Цвет называется Silver */
+	overflow: auto;
+	margin-top: 94px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 4;
+	position: absolute; 
+}
+
+/* Pay bills */
+.sloy5{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 94px;
+	margin-left: 410px;
+	width: 360px;
+	height: 50px;
+	z-index: 5;
+	position: absolute;
+}
+
+.sloy6{
+	background: #4682B4; /* Цвет голубой полоски под Meet John. Цвет называется SteelBlue */
+	overflow: auto;
+	margin-top: 144px;
+	margin-left: 380px;
+	width: 575px; /* Ширина полоски под надписью. */
+	height: 50px; /* Высота полоски под надписью. */
+	z-index: 6;
+	position: absolute;
+}
+
+/* Meet John */
+.sloy7{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 145px;
+	margin-left: 410px;
+	width: 360px;
+	height: 50px;
+	z-index: 7;
+	position: absolute;
+}
+
+.sloy8{
+	background: #87CEFA; /* Цвет голубой полоски под Buy eggs. Цвет называется LightSkyBlue */
+	overflow: auto;
+	margin-top: 194px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 8;
+	position: absolute;
+}
+
+/* Buy eggs */
+.sloy9{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 195px;
+	margin-left: 410px;
+	width: 300px;
+	height: 50px;
+	z-index: 9;
+	position: absolute;
+}
+
+.sloy10{
+	background: #C0C0C0; /* Цвет подложки у Read book. В данном случае Silver */
+	overflow: auto;
+	margin-top: 244px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 10;
+	position: absolute;
+}
+
+/* Read a book */
+.sloy11{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 244px;
+	margin-left: 410px;
+	width: 350px;
+	height: 50px;
+	z-index: 11;
+	position: absolute;
+}
+
+.sloy12{
+	background: #87CEFA; /* Цвет аналогичен подложке под Buy eggs. #87CEFA - LightSkyBlue */
+	overflow: auto; /* Обозначение родительского контейнера. */
+	margin-top: 294px; /* Сдвиг родительского контейнера сверху. */
+	margin-left: 380px; /* Сдвиг родительского контейнера слева. */
+	width: 575px; /* Ширина родительского контейнера. */
+	height: 50px; /* Высота родительского контейнера. */
+	z-index: 12;
+	position: absolute;
+}
+
+/* Organize office */
+.sloy13{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 294px;
+	margin-left: 410px;
+	width: 350px;
+	height: 50px;
+	z-index: 13;
+	position: absolute;
+}
+
+.sloy14{
+	background: #4682B4; /* Цвет аналогичен подложке под Meet John. Цвет называется SteelBlue */
+	overflow: auto;
+	margin-top: 344px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 14;
+	position: absolute;
+}
+
+/* Eat dinner */
+.sloy15{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 344px;
+	margin-left: 410px;
+	width: 350px;
+	height: 50px;
+	z-index: 15;
+	position: absolute;
+}
+
+.sloy16{
+	background: #87CEFA; /* Цвет аналогичен подложке под Organize offce. Цвет называется #87CEFA - LightSkyBlue */
+	overflow: auto;
+	margin-top: 394px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 16;
+	position: absolute;
+}
+
+/* Buy apples */
+.sloy17{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 395px;
+	margin-left: 410px;
+	width: 350px;
+	height: 50px;
+	z-index: 17;
+	position: absolute;
+}
+
+.sloy18{
+	background: #4682B4; /* Цвет аналогичен Eat dinner. Называется #4682B4 - SteelBlue */
+	overflow: auto;
+	margin-top: 444px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 18;
+	position: absolute;
+}
+
+/* Meet George */
+.sloy19{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 445px;
+	margin-left: 410px;
+	width: 575px;
+	height: 50px;
+	z-index: 19;
+	position: absolute;
+}
+
+.sloy20{
+	background: #87CEFA; /* Цвет аналогичен подложке под Organize offce. Цвет называется #87CEFA - LightSkyBlue */
+	overflow: auto;
+	margin-top: 494px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 20;
+	position: absolute;
+}
+
+/* Feed the cat */
+.sloy21{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 495px;
+	margin-left: 410px;
+	width: 575px;
+	height: 50px;
+	z-index: 21;
+	position: absolute;
+}
+
+.sloy22{
+	background: #C0C0C0; /* Цвет подложки у зачёркнутой Write Letter. В данном случае Silver */
+	overflow: auto;
+	margin-top: 544px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 22;
+	position: absolute;
+}
+
+/* Write a letter */
+.sloy23{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 545px;
+	margin-left: 410px;
+	width: 575px;
+	height: 50px;
+	z-index: 23;
+	position: absolute;
+}
+
+.sloy24{
+	background: #87CEFA; /* Цвет аналогичен подложке под Organize offce. Цвет называется #87CEFA - LightSkyBlue */
+	overflow: auto;
+	margin-top: 594px;
+	margin-left: 380px;
+	width: 575px;
+	height: 50px;
+	z-index: 24;
+	position: absolute;
+}
+
+/* Run 1 km */
+.sloy25{
+	font-family: calibri;
+	font-size: 32px;
+	color: black;
+	overflow: auto;
+	margin-top: 595px;
+	margin-left: 410px;
+	width: 575px;
+	height: 50px;
+	z-index: 25;
+	position: absolute;
+}
