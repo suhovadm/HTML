@@ -1,0 +1,371 @@
+body{
+	background: #DCDCDC; /* Gansboro */
+	min-width: 1000px; /* Минимальная ширина странички: 1000 пикселей. */
+	position: fixed; /* Фиксирует все элементы на странице при зуме браузера */
+	overflow: hidden; /* Лочит скроллинг */
+}
+
+header{
+	font-family: calibri;
+	font-size: 32px;
+	font-weight: 700;
+	color: black;
+	overflow: auto;
+	text-align: center; /* Текст заголовка по-центру экрана. */
+	padding-top: 15px;
+	padding-left: 33%;
+}
+
+/* Слой под зелёным перцем. */
+.sloy1{
+	margin-top: 5px; /* Сдвиг слоя под зелёным перцем сверху. */
+	margin-left: 170px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black; /* Граница (обводка) слоя. Задаётся параметрами: количество пикселей | толщина | цвет ; */
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с зелёным перцем */
+.pepper{
+	z-index: 1;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 21%;
+}
+
+/* Надпись "Pepper". */
+.peppertext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 23%;
+}
+
+/* Слой под красным яблоком. */
+.sloy2{
+	margin-top: 5px; /* Сдвиг слоя под красным надкушенным яблоком сверху. */
+	margin-left: 370px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Надпись "Apple". */
+.appletext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 43.40%;
+}
+
+/* Картинка с красным яблоком. */
+.apple{
+	z-index: 1;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 41%;
+}
+
+/* Слой под сыром, очевидно не очень свежим. */
+.sloy3{
+	margin-top: 5px; /* Сдвиг слоя под не очень свежим сыром сверху. */
+	margin-left: 570px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с сыром. */
+.cheese{
+	z-index: 1;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 61%;
+}
+
+/* Надпись "Cheese". */
+.cheesetext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 63.15%;
+}
+
+/* Слой под кукурузой. */
+.sloy4{
+	margin-top: 5px; /* Сдвиг слоя под кукурузой сверху. */
+	margin-left: 770px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с кукурузой. */
+.KORN{
+	z-index: 1;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 81.5%;
+}
+
+/* Надпись "Corn". */
+.corntext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 83.75%;
+}
+
+/* Слой под грибом. */
+.sloy5{
+	margin-top: 5px; /* Сдвиг слоя под грибом сверху. */
+	margin-left: 970px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с грибом. */
+.mushroom{
+	z-index: 1;
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 101%;
+}
+
+/* Надпись "Mushroom". */
+.mushroomtext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 101.65%;
+}
+
+/* Слой под чесноком. */
+.sloy6{
+	margin-top: 265px; /* Сдвиг слоя под чесноком сверху. */
+	margin-left: 170px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с чесноком. */
+.garlic{
+	z-index: 1;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 21%;
+}
+
+/* Надпись "Garlic". */
+.garlictext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 39.5%;
+	margin-left: 23.50%;
+}
+
+/* Слой под отбивной. */
+.sloy7{
+	margin-top: 265px; /* Сдвиг слоя под отбивной сверху. */
+	margin-left: 370px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с отбивной. */
+.beef{
+	z-index: 1;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 41%;
+}
+
+/* Надпись "Beef". */
+.beeftext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 39.5%;
+	margin-left: 44%;
+}
+
+/* Слой под рыбой. */
+.sloy8{
+	margin-top: 265px; /* Сдвиг слоя под рыбой сверху. */
+	margin-left: 570px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с рыбой. */
+.fish{
+	z-index: 1;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 61.25%;
+}
+
+/* Надпись "Fish". */
+.fishtext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 39.5%;
+	margin-left: 64.5%;
+}
+
+/* Слой под яичницей. */
+.sloy9{
+	margin-top: 265px; /* Сдвиг слоя под яичницей сверху. */
+	margin-left: 770px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с яичницей. */
+.eggs{
+	z-index: 1;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 82%;
+}
+
+/* Надпись "Eggs". */
+.eggstext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 39.5%;
+	margin-left: 84.45%;
+}
+
+/* Слой под Кориандром. */
+.sloy10{
+	margin-top: 265px; /* Сдвиг слоя под Кориандром сверху. */
+	margin-left: 970px;
+	margin-right: auto;
+	width: 175px;
+	height: 220px;
+	background-color: #DCDCDC; /* Gansboro */
+	border-radius: 20%;
+	border: 1px solid black;
+	z-index: 0;
+	position: absolute;
+}
+
+/* Картинка с Кориандром. */
+.coriander{
+	z-index: 1;
+	position: absolute;
+	margin-top: 30%;
+	margin-left: 102%;
+}
+
+/* Надпись "Coriander". */
+.coriandertext{
+	font-family: calibri;
+	font-size: 20px;
+	font-weight: 700;
+	z-index: 1;
+	position: absolute;
+	margin-top: 39.5%;
+	margin-left: 102%;
+}
+
+/* Сплошная черта над надписью ... that's all ... */
+.sloy11{
+	z-index: 1;
+	position: relative; /* RELATIVE обеспечивает нам позицию полоски ПОД слоями. */
+	top: 525px; /* Просто двигает полоску вниз/вверх. */
+	padding-left: 32%;
+	padding-right: 0%;
+}
+
+/* Надпись ... that's all ... */
+.sloy12{
+	font-family: calibri;
+	font-size: 16px;
+	color: black;
+	font-weight: 700;
+	margin-top: 545px; /* Сдвиг надписи ... that's all ... сверху, относительно всех остальных слоёв. */
+	margin-left: 615px;
+	z-index: 0;
+	position: absolute;
+}
+
+
+
