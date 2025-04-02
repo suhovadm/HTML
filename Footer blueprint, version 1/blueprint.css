@@ -1,0 +1,258 @@
+/* Основной серый слой внизу, подложка. */
+body{
+	background-color: #DCDCDC; /* Gainsboro.  */
+	z-index: 0;
+	position: relative;
+}
+
+/* Синяя маска НАД серой, на которой "лежат" надписи и значки. */
+.maska{
+	background-color: #4682B4; /* SteelBlue. */
+	width: 1265px;
+	height: 560px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	z-index: 1;
+	position: absolute;
+}
+/* Синяя маска НАД серой, на которой "лежат" надписи и значки. */
+
+/* Крайний левый блок с надписями. */
+.home{
+	margin-left: 175px;
+	margin-top: 160px; /* Высота надписи (надписей). */
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Подчеркивание при наведении на ссылку Home. */
+.home:hover{
+	text-decoration: underline;
+}
+
+.about{
+	margin-left: 175px;
+	margin-top: 220px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Подчеркивание при наведении на ссылку About. */
+.about:hover{
+	text-decoration: underline;
+}
+
+.gallery{
+	margin-left: 175px;
+	margin-top: 280px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute; 
+}
+
+/* Подчеркивание при наведении на ссылку Gallery. */
+.gallery:hover{
+	text-decoration: underline;
+}
+
+.news{
+	margin-left: 175px;
+	margin-top: 340px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute; 
+}
+
+/* Подчеркивание при наведении на ссылку News. */
+.news:hover{
+	text-decoration: underline;
+}
+
+/* Крайний левый блок с надписями. */
+
+/* Центральный блок с надписями. */
+.blog{
+	margin-left: 560px;
+	margin-top: 160px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Подчеркивание при наведении на ссылку Blog. */
+.blog:hover{
+	text-decoration: underline;
+}
+
+.faq{
+	margin-left: 560px;
+	margin-top: 220px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Подчеркивание при наведении на ссылку FAQ. */
+.faq:hover{
+	text-decoration: underline;
+}
+
+.contacts{
+	margin-left: 560px;
+	margin-top: 280px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Подчеркивание при наведении на ссылку Contacts. */
+.contacts:hover{
+	text-decoration: underline;
+}
+
+.privacyandcookies{
+	margin-left: 560px;
+	margin-top: 340px;
+	font-family: calibri;
+	font-size: 40px;
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+
+/* Подчеркивание при наведении на ссылку Privacy & cookies. */
+.privacyandcookies:hover{
+	text-decoration: underline;
+}
+
+/* Центральный блок с надписями. */
+
+/* Сплошная полоса под надписями. */
+.stripe{
+	color: white;
+	margin-top: 400px;
+	margin-left: 100px;
+	z-index: 2;
+	position: absolute;
+}
+/* Сплошная полоса под надписями. */
+
+/* Копирайт. */
+.copyright{
+	font-family: calibri;
+	font-size: 24px;
+	color: white;
+	margin-left: 533px;
+	margin-top: 425px;
+	z-index: 2;
+	position: absolute;
+}
+/* Копирайт. */
+
+.facebook0{
+	margin-left: 932px;
+	margin-top: 215px;
+	z-index: 2;
+	position: absolute;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+}
+
+.facebook0:hover{
+	display: none;
+}
+
+.facebook1{
+	margin-left: 932px;
+	margin-top: 215px;
+	z-index: 2;
+	position: absolute;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+	transition-duration: 1s;
+}
+
+.facebook1:hover{
+	transition: 1s;
+	transform: scale(120%);
+}
+
+.insta0{
+	margin-left: 1018px;
+	margin-top: 218px;
+	z-index: 2;
+	position: absolute;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+}
+
+.insta0:hover{
+	display: none;
+}
+
+.insta1{
+	margin-left: 1015px;
+	margin-top: 215px;
+	z-index: 2;
+	position: absolute;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+	transition-duration: 1s;
+}
+
+.insta1:hover{
+	transition: 1s;
+	transform: scale(120%);
+}
+
+.youtube0{
+	margin-left: 1097px;
+	margin-top: 215px;
+	z-index: 2;
+	position: absolute;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+}
+
+.youtube0:hover{
+	display: none;
+}
+
+.youtube1{
+	margin-left: 1097px;
+	margin-top: 215px;
+	z-index: 2;
+	position: absolute;
+	overflow: auto;
+	width: 100px;
+	height: 100px;
+	transition-duration: 1s;
+}
+
+.youtube1:hover{
+	transition: 1s;
+	transform: scale(120%);
+}
