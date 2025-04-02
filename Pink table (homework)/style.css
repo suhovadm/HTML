@@ -1,0 +1,169 @@
+/* Цвет основного фона: #DCDCDC - Gainsboro */
+/* Цвет пустого розового фона, где ничего нет: #FFB6C1 - LightPink */
+/* Цвет полосы: #DB7093 - PaleVioletRed */
+/* Цвет выделения надписей фруктов: #B22222 - FireBrick */
+
+body{
+	background: #DCDCDC; /* Цвет основного фона - светло-серый. */
+}
+
+.sloy1{
+	background: #FFB6C1; /* Слой 1, большой светло-розовый контейнер, где ничего нет. Цвет: LightPink */
+	overflow: auto; /* Определение родительского контейнера. */
+	width: 850px; /* Ширина светло-серого слоя. */
+	height: 500px; /* Высота светло-серого слоя. */
+	padding: 65px; /* Отступ со всех сторон сразу. */
+	margin: 0 auto; /* Автоподгон слоя по-центру экрана. */
+	z-index: 0;
+	position: relative; /* RELATIVE - это то, что ПОД. */
+}
+
+.sloy2{
+	font-family: calibri;
+	font-size: 54px;
+	color: white; /* Цвет текста внутри родительского контейнера 2. */
+	background: #DB7093; /* Цвет второго родительского контейнера - PaleVioletRed */
+	overflow: auto; /* Родительский контейнер для слоя 2. */
+	padding-left: 40px; /* Отступ текста внутри родительского контейнера слевой стороны. */
+	margin-top: 80px; /* Отступ самого родительского контейнера 2 сверху. */
+	margin-left: 240px; /* Отступ самого родительского контейнера 2 слевой стороны. */
+	width: 825px; /* Ширина родительского контейнера 2. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 1;
+	position: absolute; /* ABSOLUTE - это то, что НАД. */
+}
+
+.sloy2vid{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #B22222;
+	overflow: auto;
+	text-align: center; /* Выравнивание текста внутри ПЕРВОГО КРАСНОГО родительского контейнера по-центру. */
+	margin-top: 80px;
+	margin-left: 350px; /* Отступ родительского контейнера слевой стороны. У всех vid-ов аналогично! */
+	width: 190px; /* Ширина КРАСНОГО РОДИТЕЛЬСКОГО контейнера APPLE. Ширина аналогична CHERRY - 190 пикселей. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 6;
+	position: absolute;
+}
+
+.sloy3{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #DB7093;
+	overflow: auto;
+	padding-left: 40px; /* Отступ текста внутри родительского контейнера 3. */
+	margin-top: 180px;
+	margin-left: 240px; /* Отступ родительского контейнера 3 слевой стороны. Аналогично второму. */
+	width: 825px; /* Ширина родительского контейнера 3. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 2;
+	position: absolute; 
+}
+
+.sloy3vid{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #B22222;
+	overflow: auto;
+	padding-left: 33px; /* Отступ текста внутри ВТОРОГО КРАСНОГО родительского контейнера слевой стороны. Здесь padding-left вместо text-align: center. */
+	margin-top: 180px;
+	margin-left: 350px; /* Отступ родительского контейнера слевой стороны. У всех vid-ов аналогично! */
+	width: 240px; /* Ширина КРАСНОГО РОДИТЕЛЬСКОГО контейнера ORANGE. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 7;
+	position: absolute;
+}
+
+.sloy4{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #DB7093;
+	overflow: auto;
+	padding-left: 40px; /* Отступ текста внутри родительского контейнера 4. */
+	margin-top: 280px; /* Отступ родительского контейнера 4 сверху. */
+	margin-left: 240px; /* Отступ родительского контейнера 4 слевой стороны. Аналогично первому и второму. */
+	width: 825px; /* Ширина родительского контейнера 4. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 3;
+	position: absolute; 
+}
+
+.sloy4vid{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #B22222;
+	overflow: auto;
+	padding-left: 33px; /* Отступ текста внутри ТРЕТЬЕГО КРАСНОГО родительского контейнера слевой стороны. Здесь padding-left вместо text-align: center. */
+	margin-top: 280px;
+	margin-left: 350px; /* Отступ родительского контейнера слевой стороны. У всех vid-ов аналогично! */
+	width: 325px; /* Ширина КРАСНОГО РОДИТЕЛЬСКОГО контейнера PINEAPPLE. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 8;
+	position: absolute;
+}
+
+.sloy5{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #DB7093;
+	overflow: auto;
+	padding-left: 40px; /* Отступ текста внутри родительского контейнера 5. */
+	margin-top: 380px; /* Отступ родительского контейнера 5 сверху. */
+	margin-left: 240px; /* Отступ родительского контейнера 5 слевой стороны. Аналогично первому, второму и третьему. */
+	width: 825px; /* Ширина родительского контейнера 5. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 4;
+	position: absolute;
+}
+
+.sloy5vid{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #B22222;
+	overflow: auto;
+	text-align: center; /* Выравнивание текста внутри ЧЕТВЕРТОГО КРАСНОГО родительского контейнера по-центру. */
+	margin-top: 380px;
+	margin-left: 350px; /* Отступ родительского контейнера слевой стороны. У всех vid-ов аналогично! */
+	width: 140px; /* Ширина красного родительского контейнера PEAR. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 9;
+	position: absolute;
+}
+
+.sloy6{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #DB7093;
+	overflow: auto;
+	padding-left: 40px; /* Отступ текста внутри родительского контейнера 6. */
+	margin-top: 480px; /* Отступ родительского контейнера 6 сверху. */
+	margin-left: 240px; /* Отступ родительского контейнера 6 слевой стороны. Аналогично всем остальным. */
+	width: 825px; /* Ширина родительского контейнера 6. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 5;
+	position: absolute;
+}
+
+.sloy6vid{
+	font-family: calibri;
+	font-size: 54px;
+	color: white;
+	background: #B22222;
+	overflow: auto;
+	text-align: center; /* Выравнивание текста внутри ПЯТОГО КРАСНОГО родительского контейнера по-центру. */
+	margin-top: 480px;
+	margin-left: 350px; /* Отступ родительского контейнера слевой стороны. У всех vid-ов аналогично! */
+	width: 190px; /* Ширина КРАСНОГО РОДИТЕЛЬСКОГО контейнера CHERRY. Аналогична Apple. */
+	height: 70px; /* Высота родительского контейнера. У всех одинаковая. */
+	z-index: 10;
+	position: absolute;
+}
