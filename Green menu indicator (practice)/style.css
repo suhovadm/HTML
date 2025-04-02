@@ -1,0 +1,142 @@
+*{ /* Значение по умолчанию для всех элементов. */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Каждый элемент внутри бокса имеет границу. Это нужно, чтобы блоки не могли друг на друга наехать. */
+}
+
+:root{ /* псевдокласс, для создания ссылок на элементы, на которые можно обратиться через функцию var() */
+	--clr: #222327;
+}
+
+body{
+	display: flex;
+	justify-content: center; /* все элементы по-центру. */
+	align-items: center;
+	min-height: 100vh;
+	background: var(--clr); /* обращаемся через переменную, чтобы объявить цвет задника. */
+}
+
+.navigation{
+	position: relative;
+	width: 400px;
+	height: 70px;
+	background: #fff;
+	display: flex;
+	justify-content: center; /* все элементы по-центру. */
+	align-items: center;
+	border-radius: 10px;
+}
+
+.navigation ul {
+	display: flex;
+	width: 350px;
+}
+
+.navigation ul li {
+	position: relative;
+	list-style: none;
+	width: 71px; /* Ширина положения картинки и зеленого индикатора. По дефолту 70px. */
+	height: 36px; /* Высота положения картинки. По дефолту 70px, оптимальное 37-38px. */
+	z-index: 1; /* Определяет последовательность отображения элементов. */
+}
+
+.navigation ul li a {
+	position: relative;
+	display: flex; /* Два варианта: block и flex. Если поставить block, все надписи будут смещены, если flex - будут по-центру. */
+	/* line-height: 70px; */
+	font-size: 1.15em; /* Размер шрифта и размер иконок. По дефолту 1.5em, оптимальный 1.15 - 1.20em. */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /* Форматирование элементов в строке (колонка, строка и сетка). */
+	width: 100%;
+	text-align: center;
+	font-weight: 500; /* Толщина жирности шрифта. */
+}
+
+.navigation ul li a .icon{
+	position: relative;
+	display: block;
+	line-height: 70px;
+	font-size: 1.5em; /* Размер иконки (размер шрифта иконки). По дефолту 1.5em */
+	text-align: center;
+	transition: 0.5s; /* Время выполнения анимации. */
+	color: var(--clr);
+}
+
+.navigation ul li.active a .icon{
+	transform: translateY(-49px); /* смещение иконки по оси Y, то есть по вертикали (!!!) */
+}
+
+.navigation ul li a .text{
+	position: absolute;
+	color: var(--clr);
+	font-weight: 400;
+	font-size: 0.75em;
+	letter-spacing: 0.05em; /* отступы между символами (буквами). */
+	transition: 0.5s; /* Время анимации. */
+	opacity: 0; /* Прозрачность. */
+	transform: tranlateY(20px); /* По дефолту 20px. */
+}
+
+.navigation ul li.active a .text{
+	opacity: 1;
+	transform: translateY(1px); /* Выравнивание текста по оси Y, то есть по вертикали (!!!) */
+}
+/* отрисовка индикатора */
+.indicator{
+	position: absolute;
+	top: -50%;
+	width: 70px; /* Ширина самого зеленого кружка. */
+	height: 70px; /* Высота самого зеленого кружка. */
+	background: #29fd53;
+	border-radius: 50%; /* 0% - квадрат, 50 или 100% - круг. */
+	border: 2px solid var(--clr); /* Толщина обводки круга. */
+	transition: 0.5s;
+}
+
+.indicator::before{ /* Перед блоком (состояние до)*/
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	left: -22px;
+	height: 20px;
+	background: transparent;
+	border-top-right-radius: 20px;
+	box-shadow: 1px -10px 0 0 var (--clr);
+}
+
+.indicator::after{ /* Перед блоком (состояние после)*/
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	right: -22px;
+	height: 20px;
+	background: transparent; /* Устанавливает прозрачный фон. */
+	border-top-right-radius: 20px;
+	box-shadow: -1px -10px 0 0 var (--clr);
+} 
+
+
+
+/* nth-child - дочерний класс, нужен для описания конкретного элемента в группе на основе нумерации */
+.navigation ul li:nth-child(1).active ~.indicator{
+	transform: translateX(calc(70px*0))
+}
+
+.navigation ul li:nth-child(2).active ~.indicator{
+	transform: translateX(calc(70px*1))
+}
+
+.navigation ul li:nth-child(3).active ~.indicator{
+	transform: translateX(calc(70px*2))
+}
+
+.navigation ul li:nth-child(4).active ~.indicator{
+	transform: translateX(calc(70px*3))
+}
+
+.navigation ul li:nth-child(5).active ~.indicator{
+	transform: translateX(calc(70px*4))
+}
